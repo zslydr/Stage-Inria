@@ -1,0 +1,54 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="170" height="304" view_box="0 0 170 304"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:link="http://www.w3.org/1999/xlink">\n\n<desc>Généré par Mocodo 2.3.5 le Wed, 02 Aug 2017 16:36:22</desc>
+
+<rect id="frame" x="0" y="0" width="170" height="304" fill="#f7f7f7" stroke="none" stroke-width="0"/>
+
+<!-- Association ORG_SIREN -->
+<line x1="85" y1="60" x2="85" y2="161" stroke="#9970ab" stroke-width="2"/>
+<text x="90.0" y="128" fill="#1b7837" font-family="Verdana" font-size="12">0,1</text>
+<line x1="85" y1="253" x2="85" y2="161" stroke="#9970ab" stroke-width="2"/>
+<text x="90.0" y="203" fill="#1b7837" font-family="Verdana" font-size="12">0,N</text>
+<g id="association-ORG_SIREN">
+	<path d="M 115 136 a 14 14 90 0 1 14 14 V 161 h -88 V 150 a 14 14 90 0 1 14 -14" fill="#c2a5cf" stroke="#c2a5cf" stroke-width="0"/>
+	<path d="M 129 161.0 v 11 a 14 14 90 0 1 -14 14 H 55 a 14 14 90 0 1 -14 -14 V 161.0 H 88" fill="#e7d4e8" stroke="#e7d4e8" stroke-width="0"/>
+	<rect x="41" y="136" width="88" height="50" fill="none" rx="14" stroke="#9970ab" stroke-width="2"/>
+	<line x1="41" y1="161" x2="129" y2="161" stroke="#9970ab" stroke-width="1"/>
+	<text x="48" y="153.7" fill="#000000" font-family="Verdana" font-size="12">ORG_SIREN</text>
+</g>
+
+<!-- Entity ORGANISATION -->
+<g id="entity-ORGANISATION">
+	<g id="frame-ORGANISATION">
+		<rect x="9" y="9" width="152" height="25" fill="#a6dba0" stroke="#a6dba0" stroke-width="0"/>
+		<rect x="9" y="34.0" width="152" height="77" fill="#d9f0d3" stroke="#d9f0d3" stroke-width="0"/>
+		<rect x="9" y="9" width="152" height="102" fill="none" stroke="#5aae61" stroke-width="2"/>
+		<line x1="9" y1="34" x2="161" y2="34" stroke="#5aae61" stroke-width="1"/>
+	</g>
+	<text x="36" y="26.700000000000003" fill="#000000" font-family="Verdana" font-size="12">ORGANISATION</text>
+	<text x="14" y="51.7" fill="#000000" font-family="Verdana" font-size="12">organisationID INT(11)</text>
+	<line x1="14" y1="54" x2="155" y2="54" stroke="#000000" stroke-width="1"/>
+	<text x="14" y="68.8" fill="#000000" font-family="Verdana" font-size="12">type ENUM(...)</text>
+	<text x="14" y="85.8" fill="#000000" font-family="Verdana" font-size="12">url VARCHAR(255)</text>
+	<text x="14" y="102.8" fill="#000000" font-family="Verdana" font-size="12">strucID VARCHAR(45)</text>
+</g>
+
+<!-- Entity SIRENE -->
+<g id="entity-SIRENE">
+	<g id="frame-SIRENE">
+		<rect x="36" y="211" width="98" height="25" fill="#a6dba0" stroke="#a6dba0" stroke-width="0"/>
+		<rect x="36" y="236.0" width="98" height="59" fill="#d9f0d3" stroke="#d9f0d3" stroke-width="0"/>
+		<rect x="36" y="211" width="98" height="84" fill="none" stroke="#5aae61" stroke-width="2"/>
+		<line x1="36" y1="236" x2="134" y2="236" stroke="#5aae61" stroke-width="1"/>
+	</g>
+	<text x="61" y="228.7" fill="#000000" font-family="Verdana" font-size="12">SIRENE</text>
+	<text x="41" y="253.8" fill="#000000" font-family="Verdana" font-size="12">SIREN</text>
+	<line x1="41" y1="256" x2="80" y2="256" stroke="#000000" stroke-width="1"/>
+	<text x="41" y="270.8" fill="#000000" font-family="Verdana" font-size="12">NOMEN_LONG</text>
+	<text x="41" y="287.8" fill="#000000" font-family="Verdana" font-size="12">...</text>
+</g>
+</svg>
