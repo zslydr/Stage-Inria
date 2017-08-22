@@ -4,9 +4,7 @@ os.chdir(sys.argv[1]) #Select your working directory
 cwd = os.getcwd()
 import codecs
 import pandas as pd
-from time import sleep
 import os.path
-from langdetect import detect_langs
 import numpy as np
 import matplotlib.pyplot as plt
 accents=['à','á','â','ç','è','é','ê','ë','ì','í','î','ï','ñ','ò','ó','ô','ù','ú','û','ü','ý','ÿ']
