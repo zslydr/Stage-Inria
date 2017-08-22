@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Aug 22 10:54:27 2017
-
-@author: Raphael
-"""
-
 import sys
 import os
 os.chdir(sys.argv[1]) #Select your working directory
