@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Aug 22 11:11:38 2017
-
-@author: Raphael
-"""
-
 def Levenshtein(m1,m2):
     d=np.zeros((len(m1)+1,len(m2)+1))
     for i in range(len(m1)+1):
