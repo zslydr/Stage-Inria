@@ -10,5 +10,7 @@ Notebook#2 : http://nbviewer.jupyter.org/github/zslydr/Stage-Inria/blob/master/N
 
 ## Exécution :
 
-Pour exécuter les scripts, exécutez dans le terminal:
+Pour exécuter les scripts, exécutez dans le fichier run:
+```shell
 $sh run.sh
+```
