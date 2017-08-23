@@ -14,7 +14,8 @@ Pour exécuter les scripts, exécutez le fichier run:
 ```shell
 $sh run.sh
 ```
-Le répertoire contient uniquement le sample de la base Sirene. Pour utiliser la base complète, il faut la télécharger (8go+), l'extraire le fichier .csv dans le dossier data_Sirene et la renommer "dataset_Sirene.csv".
+Lors de l'exécution le choix de la base de données à utiliser vous sera demandé.
+Le répertoire github contient uniquement le sample de la base Sirene. Pour utiliser la base complète, il faut la télécharger (8go+), et extraire le fichier .csv dans le dossier data_Sirene. 
 
 Lien pour télécharger la base Sirene:
 
