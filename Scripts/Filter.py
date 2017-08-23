@@ -4,16 +4,21 @@ import pandas as pd
 import os
 os.chdir(sys.argv[1]) #Select your working directory
 cwd = os.getcwd()
-file = 'sample_Sirene'
-B=True
+B=True     
+csv=os.listdir(cwd+'/Sirene_data/')
+csv=[x for x in csv if (x!='subset') & (x!='.DS_Store')]
+for i in range(len(csv)):
+    csv[i]=str(i+1)+') '+csv[i]
 while B:
-    binary=input("Par défaut, le programme s'execute avec le sample, voulez-vous utiliser la base complète ?(y/n)")
-    if binary=='y':
-        file='dataset_Sirene'
-        B=False
-    if binary=='n':
-        B=False
-   
+    inp=input("""Choisir la base Sirene à utiliser\n"""+'\n'.join(csv)+
+              "\n/!\ Si vous executez le programme avec la base complète Sirene,le chargement peut être relativement long")
+    try : 
+        value=int(inp)
+        if value<=len(csv):
+            file=csv[value-1][3:][:-4]
+            B=False
+    except : pass
+
 text_file = open(cwd+"/Scripts/info.txt", "w")
 text_file.write(file)
 text_file.close()
@@ -31,18 +36,15 @@ v=['Biotechnologie',
    "Gestion d'installations informatiques",
    'Autres activités informatiques']
 print("Chargement de la base avec les secteurs d'activité:\n"+'\n'.join(v))
-print('/!\ Si vous executez le programme avec la base complète Sirene, le chargement peut être relativement long')
 
-if os.path.isfile(cwd+'/Sirene_data/'+file+'_subset.json')==False:
+if os.path.isfile(cwd+'/Sirene_data/subset/'+file+'_subset.json')==False:
     iter_csv = pd.read_csv(cwd+'/Sirene_data/'+file+'.csv', 
                                iterator=True, chunksize=1000,
                                error_bad_lines=False,encoding='ISO-8859-1',
                                sep=';')
     df=pd.concat(chunk[chunk[var_filter].isin(l)] for chunk in iter_csv)
 
-    df.to_json(cwd+'/Sirene_data/'+file+'_subset.json')
+    df.to_json(cwd+'/Sirene_data/subset/'+file+'_subset.json')
 
 print('Subset SIRENE récupéré.')
-
-#%%
 

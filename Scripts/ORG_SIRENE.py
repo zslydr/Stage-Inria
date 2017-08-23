@@ -24,7 +24,7 @@ for x in os.listdir(cwd+'/data/json'):
     if (x=='ORGANISATION_NAME.json') or (x=='ORGANISATION.json'):
         anHALytics[x[:-5]]=pd.read_json(cwd+'/data/json/'+x)
    
-subset_SIRENE=pd.read_json(cwd+'/Sirene_data/'+file+'_subset.json')
+subset_SIRENE=pd.read_json(cwd+'/Sirene_data/subset/'+file+'_subset.json')
 subset_SIRENE=subset_SIRENE[subset_SIRENE['SIEGE']==1]
 
 sys.stdout.write('\r')
