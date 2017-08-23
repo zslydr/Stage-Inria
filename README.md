@@ -19,3 +19,7 @@ Le répertoire contient uniquement le sample de la base Sirene. Pour utiliser la
 Lien pour télécharger la base Sirene:
 
 https://www.data.gouv.fr/fr/datasets/base-sirene-des-entreprises-et-de-leurs-etablissements-siren-siret/
+
+Le subset créé de la base Sirene se trouve dans le dossier /Sirene_data/subset
+
+La table créée ORG_SIRENE du schéma relationnel se trouve dans le dossier /data/json
