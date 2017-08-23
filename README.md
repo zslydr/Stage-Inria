@@ -33,4 +33,4 @@ Ensuite le programme relie la base Sirene avec la table ORGANISTION de la base a
 
 En se basant sur la variable NOMEN_LONG de la base Sirene et sur la variable name de la table ORGANISATION_NAME, on peut retrouver certains noms qui sont les mêmes en normalisant le texte.
 
-La fonction de normalisation se trouve dans le fichier /Scripts/lib/Function.py et peut être éditer à tout moment pour proposer des améliorations.
+La fonction de normalisation se trouve dans le fichier /Scripts/lib/Function.py et peut être édité à tout moment pour proposer des améliorations.
