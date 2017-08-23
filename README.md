@@ -30,5 +30,7 @@ La table créée ORG_SIRENE du schéma relationnel se trouve dans le dossier /da
 Le programme extrait un subset de la base Sirene en fonction du code APE (Activité Principal de l'Entreprise), car la base complete est très lourde (plus de 10 millions de lignes et 100 variables).
 
 Ensuite le programme relie la base Sirene avec la table ORGANISTION de la base anHALytics comme indiqué dans le schéma relationnel.
+
 En se basant sur la variable NOMEN_LONG de la base Sirene et sur la variable name de la table ORGANISATION_NAME, on peut retrouver certains noms qui sont les mêmes en normalisant le texte.
+
 La fonction de normalisation se trouve dans le fichier /Scripts/lib/Function.py et peut être éditer à tout moment pour proposer des améliorations.
